@@ -3,6 +3,7 @@ const passport = require('passport');
 const passportConfig = require('../config/passport');
 const User = require('../models/user');
 
+
 /* SIGNUP ROUTE */
 router
   .route('/signup')
@@ -17,7 +18,8 @@ router
         email: req.body.email
       }, function (err, existingUser) {
         if (existingUser) {
-          req.flash('errors', 'Account with that email address already exists.');
+          console.log(existingUser,req.body.username, "userrrrrrrrrrrrrrrrr");
+          req.flash('errors', 'Account with that email address already exists abccccccccc.');
           return res.redirect('/signup');
         } else {
           var user = new User();
@@ -25,6 +27,9 @@ router
           user.email = req.body.email;
           user.photo = user.gravatar();
           user.password = req.body.password;
+
+          console.log(user, user.name,   "userrrrrrrrrrrrrrrrr")
+
           user.save(function (err) {
             if (err) 
               return next(err);

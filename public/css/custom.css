@@ -69,7 +69,7 @@ select {
 }
 
 .hero {
-	background: url('/img/threely-photo.jpeg') no-repeat center center fixed;
+	background: url('/img/bluecollarworkers.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -146,6 +146,14 @@ select {
 	text-decoration: underline;
 }
 
-.navbar-brand{
-	color: green;
-}
+/* .navbar-nav > li > a:hover{
+    background-color:#FCC;
+} */
+
+/* .navbar-nav a:hover { color: #fff !important;} */
+
+
+.navbar-nav a {background-color: #fff !important; color: #000 !important;;}
+.navbar-nav a:hover {background-color: #fff !important; color: #000 !important; }
+
+.dropdown-menu li a:hover { background-color: #369ff7 !important; }
