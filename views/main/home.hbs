@@ -11,9 +11,25 @@
 			<div class="col-md-offset-3 col-md-6">
 				<form method="post" action="/search">
 					<div class="input-group input-group-lg">
-						<input type="text" class="form-control" name="search_input" placeholder="What are you searching?..">
+						{{!-- <input type="text" class="form-control" name="search_input" placeholder="What are you searching?.."> --}}
 						<span class="input-group-btn">
-							<input type="submit" class="btn btn-success" value="Find gigs">
+							<input type="submit" class="btn btn-success" value="hire freelancers">
+						</span>
+							{{!-- <span class="input-group-btn">
+							<input type="submit" class="btn btn-success" value="be a freelancers">
+						</span> --}}
+					</div>
+				</form>
+
+
+				<form action="/add-new-gig">
+					<div class="input-group input-group-lg">
+						{{!-- <input type="text" class="form-control" name="search_input" placeholder="What are you searching?.."> --}}
+						{{!-- <span class="input-group-btn">
+							<input type="submit" class="btn btn-success" value="hire freelancers">
+						</span> --}}
+							<span class="input-group-btn">
+							<input type="submit" class="btn btn-success" value="be a freelancers">
 						</span>
 					</div>
 				</form>
@@ -21,11 +37,11 @@
 		</div>
 	</div>
 </div>
-<div class="container section">
+{{!-- <div class="container section">
 	<h1>
 		Newest Gigs
-	</h1>
-		{{#each gigs}}
+	</h1> --}}
+		{{!-- {{#each gigs}}
 		<div class="col-md-3">
 			<div class="gig-card">
 				<a href="/service_detail/{{ _id }}">
@@ -35,6 +51,6 @@
 				</a>
 			</div>
 		</div>
-		{{/each}}
-	</div>
+		{{/each}} --}}
+	{{!-- </div> --}}
 </div>

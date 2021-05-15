@@ -1,8 +1,8 @@
-var client = algoliasearch('B208GQV2JF', '9f799c2601799fed175ca3b4bd9bb598');
+var client = algoliasearch('H3KEKXEIM1', 'bb9d548ad94925bab6402392c290aebb');
 var index = client.initIndex('GigSchema');
 //initialize autocomplete on search input (ID selector must match)
 autocomplete('#aa-search-input', {
-    hint: false
+    hint: true
 }, {
     source: autocomplete
         .sources

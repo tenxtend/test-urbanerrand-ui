@@ -12,6 +12,7 @@
   "dependencies": {
     "algoliasearch": "^3.32.0",
     "async": "^2.3.0",
+    "async-waterfall": "^0.1.5",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.1",
     "connect-mongo": "^3.2.0",
@@ -22,7 +23,7 @@
     "express-handlebars": "^3.1.0",
     "express-hbs": "^2.4.0",
     "express-session": "^1.15.2",
-    "hbs": "^4.1.2",
+    "hbs": "^4.0.1",
     "mongoose": "^5.12.7",
     "mongoose-algolia": "^1.7.1",
     "mongoose-deep-populate": "^3.1.1",
@@ -30,11 +31,12 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "passport.socketio": "^3.7.0",
-    "react-scripts": "^2.1.8",
+    "react-scripts": "^4.0.3",
     "socket.io": "^4.0.2",
     "stripe": "^4.25.0"
   },
   "devDependencies": {
+    "handlebars": "^4.5.0",
     "ws": "3.3.2"
   }
 }

@@ -11,7 +11,7 @@
             </form>
         </div>
     </div>
-        <div class=" section">
+        {{!-- <div class=" section">
             <h1>Search Results</h1>
             {{#each content.hits}}
             <div class="col-md-3">
@@ -24,6 +24,23 @@
                 </div>
             </div>
             {{/each}}
-        </div>
+        </div> --}}
+
+        <div class="container section">
+	<h1>
+		Newest Gigs
+	</h1>
+		{{#each gigs}}
+		<div class="col-md-3">
+			<div class="gig-card">
+				<a href="/service_detail/{{ _id }}">
+					<img src="/img/copywrite.jpg" />
+					<h4>{{title}}</h4>
+					<h3>${{price}}</h3>
+				</a>
+			</div>
+		</div>
+		{{/each}}
+	</div>
     
 </div>
