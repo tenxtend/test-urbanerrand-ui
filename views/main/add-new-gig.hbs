@@ -5,7 +5,13 @@
                 <div class="text-center">Enter you gigs details</div>
                 <br>
                 <div class="new-gig-card">
-                    <form method="post">
+                    <form method="post" >
+
+                     <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control"  placeholder="I will do something" name="gig_name">
+                        </div>
+
                         <div class="form-group">
                             <label>Gig title</label>
                             <input type="text" class="form-control" placeholder="I will do something" name="gig_title">
@@ -26,14 +32,22 @@
                                 <option>Others</option>
                             </select>
                         </div>
-
+                            <br>
                         <div class="form-group input-group-lg">
                             <label>Gig Description</label>
                             <input type="text" class="form-control" placeholder="Describe your gig" name="gig_about">
                         </div>
 
-                        <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                        {{!-- <form method="post" > --}}
+                        <input enctype="multipart/form-data" action="/upload" type="file" name="file">
+                        {{!-- <input type="submit" value="Submit"> --}}
+                        {{!-- </form> --}}
+
+                        <button type="submit" class="btn btn-success btn-lg" value="Submit">Submit</button>
                     </form>
+
+                      
+
                 </div>
             </div>
         </div>

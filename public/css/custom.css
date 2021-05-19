@@ -98,11 +98,23 @@ select {
 
 .gig-card {
 	background-color: #fff;
-	width: 228px;
-	height: 260px;
+	width: 275px;
+	height: 300px;
 	border: 1px #e5e5e5 solid;
 	margin: 0 auto 40px auto;
 	padding: 0;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	text-align: center;
+}
+
+.gig-card img{
+	border-radius: 50%;
+	padding-left: 23%;
+	padding-right: 23%;
+	padding-top: 4%;
+	padding-bottom: 4%;
 }
 
 .gig-card:hover {
@@ -114,16 +126,20 @@ select {
 	height: 139px;
 }
 
-.gig-card h4 {
-	padding: 10px;
+.gig-card a h4 {
+	padding: 0px;
 	font-weight: 400;
+	margin-bottom: 0%;
 }
 
 
-.gig-card h3 {
-	color: #00b22d;
-	padding: 0px 10px;
-	font-size: 19px;
+.gig-card a h3 {
+	color: #000;
+	/* padding: 0px 10px; */
+	font-size: 17px;
+	justify-content: center;
+	margin-bottom: 2px !important;
+	margin-top: 3px !important;
 }
 
 .gig-card a{
@@ -157,3 +173,5 @@ select {
 .navbar-nav a:hover {background-color: #fff !important; color: #000 !important; }
 
 .dropdown-menu li a:hover { background-color: #369ff7 !important; }
+
+

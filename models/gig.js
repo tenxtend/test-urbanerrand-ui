@@ -8,14 +8,12 @@ const GigSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'User'
   },
+  name:String,
   title: String,
   category: String,
   about: String,
   price: Number,
-  picture: {
-    type: String,
-    default: 'http://placehold.it/350x150'
-  },
+  file: String,
   created: {
     type: Date,
     default: Date.now
@@ -26,7 +24,7 @@ GigSchema.plugin(mongooseAlgolia, {
   appId: config.algolia_appId,
   apiKey: config.algolia_api_key,
   indexName: 'GigSchema', //The name of the index in Algolia, you can also pass in a function
-  selector: 'title _id owner category about price picture', //You can decide which field that are getting synced to Algolia (same as selector in mongoose)
+  selector: 'title _id owner category about price file', //You can decide which field that are getting synced to Algolia (same as selector in mongoose)
   populate: {
     path: 'owner',
     select: 'name'
